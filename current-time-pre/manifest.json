@@ -1,0 +1,16 @@
+{
+  "custom_middleware": {
+      "response": [
+        {
+          "name": "SendCurrentTime",
+          "path": "SendCurrentTime.so",
+          "require_session": false,
+          "raw_body_only": false
+        }
+      ],
+      "driver": "goplugin"
+  },
+  "file_list": [
+    "SendCurrentTime_v5.3.1_linux_amd64.so"
+  ]
+}

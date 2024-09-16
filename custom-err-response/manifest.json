@@ -1,0 +1,16 @@
+{
+  "custom_middleware": {
+      "response": [
+        {
+          "name": "CustomPluginResponse",
+          "path": "CustomPluginResponse.so",
+          "require_session": false,
+          "raw_body_only": false
+        }
+      ],
+      "driver": "goplugin"
+  },
+  "file_list": [
+    "CustomPluginResponse_v5.3.1_linux_amd64.so"
+  ]
+}
