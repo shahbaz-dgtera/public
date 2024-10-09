@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  quarkus-app:
+    container_name: dumplog-api
+    image: quay.apps.ocphubho.neoleap.com.sa/svcocpldap/quarkus
+    ports:
+      - "8080:8080"  # Map host port 8080 to container port 8080
+    stdin_open: true  # Equivalent to -i (keep stdin open)
+    tty: true         # Optional: allocate a pseudo-TTY
+    restart: unless-stopped  # Optional: Restart policy
